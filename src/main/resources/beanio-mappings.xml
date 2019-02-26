@@ -1,0 +1,352 @@
+<beanio xmlns="http://www.beanio.org/2012/03">
+  <stream name="scoredDataFile" format="csv">
+    <group name="scoredDataHolder" class="map">
+      <record name="header" class="list" order="1" minOccurs="1" maxOccurs="1">
+        <field name="AM201TOT" rid="true" literal="AM201TOT"/>
+        <field name="AT01" rid="true" literal="AT01"/>
+        <field name="AVG_Payment_Count2" rid="true" literal="AVG_Payment_Count2"/>
+        <field name="Act_DT_1" rid="true" literal="Act_DT_1"/>
+        <field name="Act_DT_2" rid="true" literal="Act_DT_2"/>
+        <field name="Act_DT_3" rid="true" literal="Act_DT_3"/>
+        <field name="Aflag" rid="true" literal="Aflag"/>
+        <field name="Aratio" rid="true" literal="Aratio"/>
+        <field name="BALANCE" rid="true" literal="BALANCE"/>
+        <field name="BAR" rid="true" literal="BAR"/>
+        <field name="BL_FLAG" rid="true" literal="BL_FLAG"/>
+        <field name="Bad_Number" rid="true" literal="Bad_Number"/>
+        <field name="Bat_DT" rid="true" literal="Bat_DT"/>
+        <field name="Bflag" rid="true" literal="Bflag"/>
+        <field name="Bflag_Processed" rid="true" literal="Bflag_Processed"/>
+        <field name="CMA3000" rid="true" literal="CMA3000"/>
+        <field name="CMA3002" rid="true" literal="CMA3002"/>
+        <field name="CMA3116" rid="true" literal="CMA3116"/>
+        <field name="CMA3120" rid="true" literal="CMA3120"/>
+        <field name="CMA3203" rid="true" literal="CMA3203"/>
+        <field name="CMA3215" rid="true" literal="CMA3215"/>
+        <field name="CMA3217" rid="true" literal="CMA3217"/>
+        <field name="CMA3224" rid="true" literal="CMA3224"/>
+        <field name="CMA3235" rid="true" literal="CMA3235"/>
+        <field name="CMA3237" rid="true" literal="CMA3237"/>
+        <field name="CMA3268" rid="true" literal="CMA3268"/>
+        <field name="CMA3329" rid="true" literal="CMA3329"/>
+        <field name="CMA3333" rid="true" literal="CMA3333"/>
+        <field name="CMA3535" rid="true" literal="CMA3535"/>
+        <field name="CMA3546" rid="true" literal="CMA3546"/>
+        <field name="CMA3579" rid="true" literal="CMA3579"/>
+        <field name="CMA3580" rid="true" literal="CMA3580"/>
+        <field name="CMA3747" rid="true" literal="CMA3747"/>
+        <field name="CMA3835" rid="true" literal="CMA3835"/>
+        <field name="CMA3843" rid="true" literal="CMA3843"/>
+        <field name="CMA3844" rid="true" literal="CMA3844"/>
+        <field name="CMA3854" rid="true" literal="CMA3854"/>
+        <field name="CMA3863" rid="true" literal="CMA3863"/>
+        <field name="CMA3865" rid="true" literal="CMA3865"/>
+        <field name="CMA3871" rid="true" literal="CMA3871"/>
+        <field name="CMA3872" rid="true" literal="CMA3872"/>
+        <field name="CMA3873" rid="true" literal="CMA3873"/>
+        <field name="CMA3895" rid="true" literal="CMA3895"/>
+        <field name="CMA3969" rid="true" literal="CMA3969"/>
+        <field name="CMA3986" rid="true" literal="CMA3986"/>
+        <field name="CMA3994" rid="true" literal="CMA3994"/>
+        <field name="CMA_3001" rid="true" literal="CMA_3001"/>
+        <field name="CMA_3100" rid="true" literal="CMA_3100"/>
+        <field name="CMA_3109" rid="true" literal="CMA_3109"/>
+        <field name="CMA_3123" rid="true" literal="CMA_3123"/>
+        <field name="CMA_3124" rid="true" literal="CMA_3124"/>
+        <field name="CMA_3135" rid="true" literal="CMA_3135"/>
+        <field name="CMA_3148" rid="true" literal="CMA_3148"/>
+        <field name="CMA_3159" rid="true" literal="CMA_3159"/>
+        <field name="CMA_3164" rid="true" literal="CMA_3164"/>
+        <field name="CMA_3207" rid="true" literal="CMA_3207"/>
+        <field name="CMA_3273" rid="true" literal="CMA_3273"/>
+        <field name="CMA_3376" rid="true" literal="CMA_3376"/>
+        <field name="CMA_3536" rid="true" literal="CMA_3536"/>
+        <field name="CMA_3857" rid="true" literal="CMA_3857"/>
+        <field name="CMA_3862" rid="true" literal="CMA_3862"/>
+        <field name="CMA_3913" rid="true" literal="CMA_3913"/>
+        <field name="CMA_3938" rid="true" literal="CMA_3938"/>
+        <field name="Closed_Date" rid="true" literal="Closed_Date"/>
+        <field name="Count30" rid="true" literal="Count30"/>
+        <field name="Count60" rid="true" literal="Count60"/>
+        <field name="Count90" rid="true" literal="Count90"/>
+        <field name="DAFlag" rid="true" literal="DAFlag"/>
+        <field name="DELQ_MAX" rid="true" literal="DELQ_MAX"/>
+        <field name="DaysDelinquent" rid="true" literal="DaysDelinquent"/>
+        <field name="Dcode" rid="true" literal="Dcode"/>
+        <field name="Disc_Rate" rid="true" literal="Disc_Rate"/>
+        <field name="EVR60_MOB" rid="true" literal="EVR60_MOB"/>
+        <field name="EXTENSION_MOB" rid="true" literal="EXTENSION_MOB"/>
+        <field name="Eflag" rid="true" literal="Eflag"/>
+        <field name="Entry_DT" rid="true" literal="Entry_DT"/>
+        <field name="Ephone" rid="true" literal="Ephone"/>
+        <field name="Ext_DT" rid="true" literal="Ext_DT"/>
+        <field name="Extns" rid="true" literal="Extns"/>
+        <field name="FDIFF" rid="true" literal="FDIFF"/>
+        <field name="Grade" rid="true" literal="Grade"/>
+        <field name="Gross_Due_Amount" rid="true" literal="Gross_Due_Amount"/>
+        <field name="HNFlag" rid="true" literal="HNFlag"/>
+        <field name="HOME_IS_MOBILE" rid="true" literal="HOME_IS_MOBILE"/>
+        <field name="HOME_PHONE_OWNERSHIP" rid="true" literal="HOME_PHONE_OWNERSHIP"/>
+        <field name="Hphone" rid="true" literal="Hphone"/>
+        <field name="ID" rid="true" literal="ID"/>
+        <field name="Insert_DT" rid="true" literal="Insert_DT"/>
+        <field name="Is_Active" rid="true" literal="Is_Active"/>
+        <field name="LANGUAGE_PREFERENCE" rid="true" literal="LANGUAGE_PREFERENCE"/>
+        <field name="LC1" rid="true" literal="LC1"/>
+        <field name="LC_DT" rid="true" literal="LC_DT"/>
+        <field name="LIST_1" rid="true" literal="LIST_1"/>
+        <field name="LIST_STATUS_1" rid="true" literal="LIST_STATUS_1"/>
+        <field name="LS_FLAG" rid="true" literal="LS_FLAG"/>
+        <field name="LT_CHRG_BAL_AMT" rid="true" literal="LT_CHRG_BAL_AMT"/>
+        <field name="List_Region_1" rid="true" literal="List_Region_1"/>
+        <field name="MATURITY_DATE" rid="true" literal="MATURITY_DATE"/>
+        <field name="MNFlag" rid="true" literal="MNFlag"/>
+        <field name="MOB" rid="true" literal="MOB"/>
+        <field name="MOBILE_PHONE" rid="true" literal="MOBILE_PHONE"/>
+        <field name="MOBILE_PHONE_OWNERSHIP" rid="true" literal="MOBILE_PHONE_OWNERSHIP"/>
+        <field name="MOB_TERM_RATIO" rid="true" literal="MOB_TERM_RATIO"/>
+        <field name="MONTHS_REMAINING" rid="true" literal="MONTHS_REMAINING"/>
+        <field name="MTR2" rid="true" literal="MTR2"/>
+        <field name="MTR_GT_08" rid="true" literal="MTR_GT_08"/>
+        <field name="Mflag" rid="true" literal="Mflag"/>
+        <field name="NDate" rid="true" literal="NDate"/>
+        <field name="NO_CONTACT" rid="true" literal="NO_CONTACT"/>
+        <field name="Next_DT" rid="true" literal="Next_DT"/>
+        <field name="Nflag" rid="true" literal="Nflag"/>
+        <field name="OFlag" rid="true" literal="OFlag"/>
+        <field name="OTerm_Count" rid="true" literal="OTerm_Count"/>
+        <field name="Oind" rid="true" literal="Oind"/>
+        <field name="PAYOFF_AMOUNT" rid="true" literal="PAYOFF_AMOUNT"/>
+        <field name="PD30_Count" rid="true" literal="PD30_Count"/>
+        <field name="PD60_Count" rid="true" literal="PD60_Count"/>
+        <field name="PD90_Count" rid="true" literal="PD90_Count"/>
+        <field name="PERIODS_EXTENDED" rid="true" literal="PERIODS_EXTENDED"/>
+        <field name="PRAT" rid="true" literal="PRAT"/>
+        <field name="PST_Home_Area_Flag" rid="true" literal="PST_Home_Area_Flag"/>
+        <field name="P_1" rid="true" literal="P_1"/>
+        <field name="P_D_Date" rid="true" literal="P_D_Date"/>
+        <field name="P_D_Date_1" rid="true" literal="P_D_Date_1"/>
+        <field name="Payment_Count" rid="true" literal="Payment_Count"/>
+        <field name="Payment_Due_Count" rid="true" literal="Payment_Due_Count"/>
+        <field name="Payment_Left_Count" rid="true" literal="Payment_Left_Count"/>
+        <field name="Payment_Paid_Count" rid="true" literal="Payment_Paid_Count"/>
+        <field name="Posting_Status" rid="true" literal="Posting_Status"/>
+        <field name="ProcessingDate" rid="true" literal="ProcessingDate"/>
+        <field name="Pscore" rid="true" literal="Pscore"/>
+        <field name="RCflag" rid="true" literal="RCflag"/>
+        <field name="REGION_WEST" rid="true" literal="REGION_WEST"/>
+        <field name="RT5" rid="true" literal="RT5"/>
+        <field name="Rate" rid="true" literal="Rate"/>
+        <field name="Rcode" rid="true" literal="Rcode"/>
+        <field name="Region" rid="true" literal="Region"/>
+        <field name="Region_Code" rid="true" literal="Region_Code"/>
+        <field name="Rflag" rid="true" literal="Rflag"/>
+        <field name="SAS2" rid="true" literal="SAS2"/>
+        <field name="SB" rid="true" literal="SB"/>
+        <field name="SC1" rid="true" literal="SC1"/>
+        <field name="SPECIAL_HANDLING_FLAG" rid="true" literal="SPECIAL_HANDLING_FLAG"/>
+        <field name="SS1" rid="true" literal="SS1"/>
+        <field name="STATE" rid="true" literal="STATE"/>
+        <field name="Score" rid="true" literal="Score"/>
+        <field name="Sflag" rid="true" literal="Sflag"/>
+        <field name="TIME_ZONE_IND" rid="true" literal="TIME_ZONE_IND"/>
+        <field name="TOT_MNTHS_EXT_12MNTH" rid="true" literal="TOT_MNTHS_EXT_12MNTH"/>
+        <field name="TOT_MNTHS_EXT_6MNTH" rid="true" literal="TOT_MNTHS_EXT_6MNTH"/>
+        <field name="TOT_TIMES_EXT_12MNTH" rid="true" literal="TOT_TIMES_EXT_12MNTH"/>
+        <field name="TOT_TIMES_EXT_6MNTH" rid="true" literal="TOT_TIMES_EXT_6MNTH"/>
+        <field name="TYPE" rid="true" literal="TYPE"/>
+        <field name="Term_Count" rid="true" literal="Term_Count"/>
+        <field name="UA10" rid="true" literal="UA10"/>
+        <field name="UA4" rid="true" literal="UA4"/>
+        <field name="UA7" rid="true" literal="UA7"/>
+        <field name="UM2" rid="true" literal="UM2"/>
+        <field name="U_Amount_Due" rid="true" literal="U_Amount_Due"/>
+        <field name="WNFlag" rid="true" literal="WNFlag"/>
+        <field name="WORK_IS_MOBILE" rid="true" literal="WORK_IS_MOBILE"/>
+        <field name="WORK_PHONE_OWNERSHIP" rid="true" literal="WORK_PHONE_OWNERSHIP"/>
+        <field name="ZIP" rid="true" literal="ZIP"/>
+        <field name="cto_score_gen3" rid="true" literal="cto_score_gen3"/>
+        <field name="cto_seg" rid="true" literal="cto_seg"/>
+        <field name="prob" rid="true" literal="prob"/>
+        <field name="risk_score" rid="true" literal="risk_score"/>
+        <field name="segment" rid="true" literal="segment"/>
+        <field name="currentStage" literal="currentStage" minOccurs="0"/>
+        <field name="treatmentOutcome" literal="treatmentOutcome" minOccurs="0"/>
+        <field name="errorMessage" literal="errorMessage" minOccurs="0"/>
+      </record>
+      <record name="entries" class="org.apache.camel.examples.AccountHolder" collection="list" order="2" minOccurs="0" maxOccurs="unbounded">
+        <field name="AM201TOT" type="string"/>
+        <field name="AT01" type="string"/>
+        <field name="AVG_Payment_Count2" type="string"/>
+        <field name="Act_DT_1" type="string"/>
+        <field name="Act_DT_2" type="string"/>
+        <field name="Act_DT_3" type="string"/>
+        <field name="Aflag" type="string"/>
+        <field name="Aratio" type="string"/>
+        <field name="BALANCE" type="double"/>
+        <field name="BAR" type="double"/>
+        <field name="BL_FLAG" type="string"/>
+        <field name="Bad_Number" type="string"/>
+        <field name="Bat_DT" type="string"/>
+        <field name="Bflag" type="string"/>
+        <field name="Bflag_Processed" type="string"/>
+        <field name="CMA3000" type="string"/>
+        <field name="CMA3002" type="string"/>
+        <field name="CMA3116" type="string"/>
+        <field name="CMA3120" type="string"/>
+        <field name="CMA3203" type="string"/>
+        <field name="CMA3215" type="string"/>
+        <field name="CMA3217" type="string"/>
+        <field name="CMA3224" type="string"/>
+        <field name="CMA3235" type="string"/>
+        <field name="CMA3237" type="string"/>
+        <field name="CMA3268" type="string"/>
+        <field name="CMA3329" type="string"/>
+        <field name="CMA3333" type="string"/>
+        <field name="CMA3535" type="string"/>
+        <field name="CMA3546" type="string"/>
+        <field name="CMA3579" type="string"/>
+        <field name="CMA3580" type="string"/>
+        <field name="CMA3747" type="string"/>
+        <field name="CMA3835" type="string"/>
+        <field name="CMA3843" type="string"/>
+        <field name="CMA3844" type="string"/>
+        <field name="CMA3854" type="string"/>
+        <field name="CMA3863" type="string"/>
+        <field name="CMA3865" type="string"/>
+        <field name="CMA3871" type="string"/>
+        <field name="CMA3872" type="string"/>
+        <field name="CMA3873" type="string"/>
+        <field name="CMA3895" type="string"/>
+        <field name="CMA3969" type="string"/>
+        <field name="CMA3986" type="string"/>
+        <field name="CMA3994" type="string"/>
+        <field name="CMA_3001" type="string"/>
+        <field name="CMA_3100" type="string"/>
+        <field name="CMA_3109" type="string"/>
+        <field name="CMA_3123" type="string"/>
+        <field name="CMA_3124" type="string"/>
+        <field name="CMA_3135" type="string"/>
+        <field name="CMA_3148" type="string"/>
+        <field name="CMA_3159" type="string"/>
+        <field name="CMA_3164" type="string"/>
+        <field name="CMA_3207" type="string"/>
+        <field name="CMA_3273" type="string"/>
+        <field name="CMA_3376" type="string"/>
+        <field name="CMA_3536" type="string"/>
+        <field name="CMA_3857" type="string"/>
+        <field name="CMA_3862" type="string"/>
+        <field name="CMA_3913" type="string"/>
+        <field name="CMA_3938" type="string"/>
+        <field name="Closed_Date" type="string"/>
+        <field name="Count30" type="string"/>
+        <field name="Count60" type="string"/>
+        <field name="Count90" type="string"/>
+        <field name="DAFlag" type="string"/>
+        <field name="DELQ_MAX" type="string"/>
+        <field name="DaysDelinquent" type="integer"/>
+        <field name="Dcode" type="string"/>
+        <field name="Disc_Rate" type="string"/>
+        <field name="EVR60_MOB" type="string"/>
+        <field name="EXTENSION_MOB" type="string"/>
+        <field name="Eflag" type="string"/>
+        <field name="Entry_DT" type="string"/>
+        <field name="Ephone" type="string"/>
+        <field name="Ext_DT" type="string"/>
+        <field name="Extns" type="string"/>
+        <field name="FDIFF" type="string"/>
+        <field name="Grade" type="string"/>
+        <field name="Gross_Due_Amount" type="string"/>
+        <field name="HNFlag" type="string"/>
+        <field name="HOME_IS_MOBILE" type="string"/>
+        <field name="HOME_PHONE_OWNERSHIP" type="string"/>
+        <field name="Hphone" type="string"/>
+        <field name="ID" type="string"/>
+        <field name="Insert_DT" type="string"/>
+        <field name="Is_Active" type="string"/>
+        <field name="LANGUAGE_PREFERENCE" type="string"/>
+        <field name="LC1" type="string"/>
+        <field name="LC_DT" type="string"/>
+        <field name="LIST_1" type="string"/>
+        <field name="LIST_STATUS_1" type="string"/>
+        <field name="LS_FLAG" type="string"/>
+        <field name="LT_CHRG_BAL_AMT" type="string"/>
+        <field name="List_Region_1" type="string"/>
+        <field name="MATURITY_DATE" type="string"/>
+        <field name="MNFlag" type="string"/>
+        <field name="MOB" type="string"/>
+        <field name="MOBILE_PHONE" type="string"/>
+        <field name="MOBILE_PHONE_OWNERSHIP" type="string"/>
+        <field name="MOB_TERM_RATIO" type="string"/>
+        <field name="MONTHS_REMAINING" type="string"/>
+        <field name="MTR2" type="string"/>
+        <field name="MTR_GT_08" type="string"/>
+        <field name="Mflag" type="string"/>
+        <field name="NDate" type="string"/>
+        <field name="NO_CONTACT" type="string"/>
+        <field name="Next_DT" type="string"/>
+        <field name="Nflag" type="string"/>
+        <field name="OFlag" type="string"/>
+        <field name="OTerm_Count" type="string"/>
+        <field name="Oind" type="string"/>
+        <field name="PAYOFF_AMOUNT" type="string"/>
+        <field name="PD30_Count" type="string"/>
+        <field name="PD60_Count" type="string"/>
+        <field name="PD90_Count" type="string"/>
+        <field name="PERIODS_EXTENDED" type="string"/>
+        <field name="PRAT" type="string"/>
+        <field name="PST_Home_Area_Flag" type="string"/>
+        <field name="P_1" type="string"/>
+        <field name="P_D_Date" type="string"/>
+        <field name="P_D_Date_1" type="string"/>
+        <field name="Payment_Count" type="string"/>
+        <field name="Payment_Due_Count" type="string"/>
+        <field name="Payment_Left_Count" type="string"/>
+        <field name="Payment_Paid_Count" type="string"/>
+        <field name="Posting_Status" type="string"/>
+        <field name="ProcessingDate" type="string"/>
+        <field name="Pscore" type="string"/>
+        <field name="RCflag" type="string"/>
+        <field name="REGION_WEST" type="string"/>
+        <field name="RT5" type="string"/>
+        <field name="Rate" type="string"/>
+        <field name="Rcode" type="string"/>
+        <field name="Region" type="string"/>
+        <field name="Region_Code" type="string"/>
+        <field name="Rflag" type="string"/>
+        <field name="SAS2" type="string"/>
+        <field name="SB" type="string"/>
+        <field name="SC1" type="string"/>
+        <field name="SPECIAL_HANDLING_FLAG" type="string"/>
+        <field name="SS1" type="string"/>
+        <field name="STATE" type="string"/>
+        <field name="Score" type="string"/>
+        <field name="Sflag" type="string"/>
+        <field name="TIME_ZONE_IND" type="string"/>
+        <field name="TOT_MNTHS_EXT_12MNTH" type="string"/>
+        <field name="TOT_MNTHS_EXT_6MNTH" type="string"/>
+        <field name="TOT_TIMES_EXT_12MNTH" type="string"/>
+        <field name="TOT_TIMES_EXT_6MNTH" type="string"/>
+        <field name="TYPE" type="string"/>
+        <field name="Term_Count" type="string"/>
+        <field name="UA10" type="string"/>
+        <field name="UA4" type="string"/>
+        <field name="UA7" type="string"/>
+        <field name="UM2" type="string"/>
+        <field name="U_Amount_Due" type="string"/>
+        <field name="WNFlag" type="string"/>
+        <field name="WORK_IS_MOBILE" type="string"/>
+        <field name="WORK_PHONE_OWNERSHIP" type="string"/>
+        <field name="ZIP" type="string"/>
+        <field name="cto_score_gen3" type="string"/>
+        <field name="cto_seg" type="string"/>
+        <field name="prob" type="string"/>
+        <field name="risk_score" type="double"/>
+        <field name="segment" type="string"/>
+        <field name="currentStage" type="string" minOccurs="0"/>
+        <field name="treatmentOutcome" type="string" minOccurs="0"/>
+        <field name="errorMessage" type="string" minOccurs="0"/>
+      </record>
+    </group>
+  </stream>
+</beanio>
