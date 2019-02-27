@@ -258,13 +258,11 @@ public class CamelConfiguration extends RouteBuilder {
         .to("direct:aggregateToFile")
         .stop()
       .end()
-      /*
       .enrich()
         .constant("direct:callRulesSvc")
         .aggregationStrategyRef("rulesEnrichmentStrategy")
         .aggregateOnException(true)
       .end()
-      */
       .to("direct:aggregateToFile")
     ;
     
