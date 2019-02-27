@@ -67,6 +67,6 @@ app:
   rules-client:
     host: rhdm7-install-kieserver-rhdm7-install-toyota.apps.dallas-309d.openshiftworkshop.com
     port: 80
-    instance: DecisionService_1.0.10-CR1
+    instance: DecisionService_1.0.12-CR3
     username: dmAdmin
     password: redhatdm1!

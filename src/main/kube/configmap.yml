@@ -14,4 +14,4 @@ data:
     app.rand-num-client.port=8080
     app.rules-client.host=rhdm7-install-kieserver-rhdm7-install-toyota.apps.dallas-309d.openshiftworkshop.com
     app.rules-client.port=80
-    app.rules-client.instance=DecisionService_1.0.10-CR1
+    app.rules-client.instance=DecisionService_1.0.12-CR3
