@@ -11,26 +11,32 @@ endpoints:
 
 # Spring Boot
 spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration
   datasource:
+    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3307/example?autoReconnect=true&useSSL=false
     username: root
     password: Abcd1234
     schema: classpath:sql/schema.sql
-    schemaUsername: ${spring.datasource.username}
-    schemaPassword: ${spring.datasource.password}
+    schema-username: ${spring.datasource.username}
+    schema-password: ${spring.datasource.password}
     initialization-mode: ALWAYS
     continue-on-error: true
 
 # Camel Spring Boot
 camel:
   springboot:
-    name: ScoredDataFileProc
+    name: scoreddata-file-proc
+    amqp:
+      max-concurrent-consumers: 10
 
 # AMQPHub
 amqphub:
   amqp10jms:
     pool:
       enabled: true
+      max-connections: 10
     remote-url: amqp://localhost:5672
     #username: amqpuser
     #password: password
@@ -41,3 +47,26 @@ logging:
   level:
     #org.apache.camel: DEBUG
     org.apache.camel.examples: DEBUG
+    org.apache.camel.component.http4: WARN
+    org.apache.camel.component.jackson: WARN
+
+# Application
+app:
+  file-reader:
+    path: target/input/
+  file-writer:
+    path: target/output/
+  npa-client:
+    host: localhost
+    port: 9090
+    cache-timeout: 300000
+  rand-num-client:
+    host: localhost
+    port: 7070
+    cache-timeout: 300000
+  rules-client:
+    host: rhdm7-install-kieserver-rhdm7-install-toyota.apps.dallas-309d.openshiftworkshop.com
+    port: 80
+    instance: DecisionService_1.0.10-CR1
+    username: dmAdmin
+    password: redhatdm1!

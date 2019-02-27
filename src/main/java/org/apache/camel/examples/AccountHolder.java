@@ -1389,14 +1389,6 @@ public class AccountHolder implements Serializable {
     this.cto_seg = cto_seg;
   }
 
-  public String getSegment() {
-    return segment;
-  }
-
-  public void setSegment(String segment) {
-    this.segment = segment;
-  }
-
   private String ID;
   private String Act_DT_1;
   private String Act_DT_2;
@@ -1562,7 +1554,6 @@ public class AccountHolder implements Serializable {
   private String Aflag;
   private String cto_score_gen3;
   private String cto_seg;
-  private String segment;
 
   public String getTreatmentOutcome() {
     return treatmentOutcome;

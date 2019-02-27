@@ -169,7 +169,6 @@
         <field name="cto_seg" rid="true" literal="cto_seg"/>
         <field name="prob" rid="true" literal="prob"/>
         <field name="risk_score" rid="true" literal="risk_score"/>
-        <field name="segment" rid="true" literal="segment"/>
         <field name="currentStage" literal="currentStage" minOccurs="0"/>
         <field name="treatmentOutcome" literal="treatmentOutcome" minOccurs="0"/>
         <field name="errorMessage" literal="errorMessage" minOccurs="0"/>
@@ -342,10 +341,9 @@
         <field name="cto_seg" type="string"/>
         <field name="prob" type="string"/>
         <field name="risk_score" type="double"/>
-        <field name="segment" type="string"/>
-        <field name="currentStage" type="string" minOccurs="0"/>
-        <field name="treatmentOutcome" type="string" minOccurs="0"/>
-        <field name="errorMessage" type="string" minOccurs="0"/>
+        <field name="currentStage" type="string" minOccurs="0" default=""/>
+        <field name="treatmentOutcome" type="string" minOccurs="0" default=""/>
+        <field name="errorMessage" type="string" minOccurs="0" default=""/>
       </record>
     </group>
   </stream>

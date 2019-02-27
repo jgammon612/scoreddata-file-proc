@@ -109,8 +109,16 @@
       <artifactId>mysql-connector-java</artifactId>
     </dependency>
     <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-dbcp2</artifactId>
+    </dependency>
+    <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-http4-starter</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel</groupId>
+      <artifactId>camel-infinispan-starter</artifactId>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>

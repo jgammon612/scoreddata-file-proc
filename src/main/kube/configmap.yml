@@ -4,4 +4,14 @@ metadata:
   name: scoreddata-file-proc-configmap
 data:
   application.properties: |-
-    spring.datasource.url=jdbc:mysql://192.168.99.1:3306/example?autoReconnect=true&useSSL=false
+    spring.datasource.url=jdbc:mysql://mysql:3306/example?autoReconnect=true&useSSL=false
+    amqphub.amqp10jms.remote-url=amqp://broker-amq-amqp:5672
+    app.file-reader.path=/mnt/scored/
+    app.file-writer.path=/mnt/processed/
+    app.npa-client.host=npa-svc
+    app.npa-client.port=8080
+    app.rand-num-client.host=randnum-svc
+    app.rand-num-client.port=8080
+    app.rules-client.host=rhdm7-install-kieserver-rhdm7-install-toyota.apps.dallas-309d.openshiftworkshop.com
+    app.rules-client.port=80
+    app.rules-client.instance=DecisionService_1.0.10-CR1
