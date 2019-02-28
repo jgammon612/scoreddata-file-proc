@@ -113,6 +113,7 @@ public class CamelConfiguration extends RouteBuilder {
   @Bean
   AggregationStrategy scoredDataResultsAggregationStrategy() {
     return (Exchange oldExchange, Exchange newExchange) -> {
+      /*
       List<Integer> list;
       if (oldExchange == null) {
         oldExchange = newExchange;
@@ -122,6 +123,11 @@ public class CamelConfiguration extends RouteBuilder {
       }
       list.add(newExchange.getIn().getHeader("SplitIndex", Integer.class));
       oldExchange.getIn().setBody(list);
+      */
+      if (oldExchange == null) {
+        oldExchange = newExchange;
+      }
+      oldExchange.getIn().setBody(null);
       return oldExchange;
     };
   }
